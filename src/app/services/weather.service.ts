@@ -14,8 +14,9 @@ export class WeatherService {
 
     const params = new HttpParams()
     .set("q", city)
-    .set("appid", apiKey)
+    .set("appid", apiKey);
 
     return this.httpSvc.get(environment.api_url, {params : params}).toPromise();
   }
+
 }
