@@ -46,9 +46,9 @@ export class AppComponent {
 
   ngOnInit(){
     this.getWeatherFromAPI(this.model.city);
-    this.route.paramMap.subscribe(params => {
-     this.country= this.countries[+params.get('countryId')];
-    });
+    // this.route.paramMap.subscribe(params => {
+    //  this.country= this.countries[+params.get('countryId')];
+    // });
   }
 
   getWeatherFromAPI(city: string){
