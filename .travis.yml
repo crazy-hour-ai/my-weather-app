@@ -13,12 +13,12 @@ before_script:
   - npm install -g @angular/cli
 
 script:
-  - ng build --prod --base-href https://crazy-hour-ai.github.io/weather-app/
+  - ng build --prod --base-href https://crazy-hour-ai.github.io/my-weather-app/
 
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: dist/weather-app
+  local_dir: dist/my-weather-app
   on:
     branch: master
